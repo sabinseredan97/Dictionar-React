@@ -19,7 +19,7 @@ function App() {
       setWordsList(prevWordsList => {
         return [...prevWordsList, userInput]
       });
-      wordAddedMsg.innerHTML = "Your word has been sucsessfully added to the dictionary!";
+      wordAddedMsg.innerHTML = "Your word has been succsessfully added to the dictionary!";
     }
     inputField.value = "";
   }
