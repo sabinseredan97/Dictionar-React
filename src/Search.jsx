@@ -22,9 +22,7 @@ export default function Search( {wordsList} ) {
           return searchInput.toLowerCase() === "" ? word : word.toLowerCase().includes(searchInput)
             }).map((word) => {
               return (
-                <div key={word.toString()}>
-                  <ul className = "listOfWords">{word}</ul>
-                </div>
+                <ul key={word.toString()} className = "listOfWords">{word}</ul>
               );
             })}
       </div>
