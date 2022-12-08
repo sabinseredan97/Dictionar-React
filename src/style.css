@@ -1,0 +1,29 @@
+.listOfWords {
+    background-color: aquamarine;
+}
+
+.inputField {
+    font-size: large;
+    padding: 1rem 2rem;
+}
+
+.searchField {
+    font-size: large;
+    padding: 1rem 3rem;
+}
+
+.submitBtn {
+    font-size: 1rem;
+    padding: .5rem 2rem;
+    background-color: chartreuse;
+}
+
+.prevWord {
+    background-color: darkseagreen;
+}
+
+.wordsMsg {
+    text-align: center;
+    background-color: darkolivegreen;
+    color: red;
+}
