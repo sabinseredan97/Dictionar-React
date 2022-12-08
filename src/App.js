@@ -33,7 +33,9 @@ function App() {
         <h3 className="prevWord">Previous word: {userInput}</h3>
         <h2 id="wordAddedMsg" className="wordsMsg">Please add a word in the dictionary</h2>
         <br />
-        <Search wordsList={wordsList}/>
+        <div>
+          <Search wordsList={wordsList}/>
+        </div>
       </div>
     </>
   );
