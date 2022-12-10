@@ -6,11 +6,11 @@ export default function AddButton(props) {
     let userInput = document.getElementById("inputField");
     let msgToUser;
     if (userInput.value !== "") {
-        msgToUser = "Your word has been succsessfully added to the dictionary!";
-        return props.sendMsgToParent(msgToUser, true);
+      msgToUser = "Your word has been succsessfully added to the dictionary!";
+      return props.sendMsgToParent(msgToUser, true);
     } else {
-        msgToUser = "Please insert a word before pressing the add button!";
-        return props.sendMsgToParent(msgToUser, false);
+      msgToUser = "Please insert a word before pressing the add button!";
+      return props.sendMsgToParent(msgToUser, false);
     }
   }
 
