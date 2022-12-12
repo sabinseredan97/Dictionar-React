@@ -18,9 +18,7 @@ function App() {
       if (wordsList.includes(userInput)) {
         wordAddedMsg.innerHTML = "This word already exists in the dictionary, please add a different one!";
       } else {
-        setWordsList(prevWordsList => {
-          return [...prevWordsList, userInput]
-        });
+        setWordsList([...wordsList, userInput]);
         wordAddedMsg.innerHTML = msgToUser;
       }
     } else {
