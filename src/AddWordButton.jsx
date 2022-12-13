@@ -10,10 +10,9 @@ export default function AddWordButton(props) {
   function AddWordButton() {
     let inputField = document.getElementById("inputField");
     let msgToUser;
-    if (userInput !== "") {
+    if (inputField.value !== "") {
       msgToUser = "Your word has been succsessfully added to the dictionary!";
       inputField.value = "";
-      setUserInput("");
       return props.handleUserInput(msgToUser, true, userInput);
     } else {
       msgToUser = "Please insert a word before pressing the add button!";
