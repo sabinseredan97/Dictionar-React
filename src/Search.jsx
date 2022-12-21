@@ -19,7 +19,7 @@ export default function Search( {wordsList} ) {
       />
       <div>
         {wordsList.filter((word) => {
-          return searchInput.toLowerCase() === "" ? word : word.toLowerCase().includes(searchInput)
+          return searchInput.toLowerCase() === "" ? word : word.toLowerCase().includes(searchInput.toLowerCase())
             }).map((word) => {
               return (
                 <li key={word.toString()} className="elementsOfList">{word}</li>
